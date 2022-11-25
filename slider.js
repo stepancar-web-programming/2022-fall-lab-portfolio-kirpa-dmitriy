@@ -9,38 +9,34 @@ const captions = [
   'Monster Thinking',
   'Monster Enjoying',
 ];
-
-function slide(id) {
+function slideTo(slideIndex) {
   imgContainer.style.left = `${-100 * id}%`;
   pagination.forEach((pag) => {
     pag.classList.remove('active');
   });
-  pagination[id].classList.add('active');
+  pagination[slideIndex].classList.add('active');
   caption.style.animation = 'textChange 1s ease-in-out';
   setTimeout(() => {
     caption.style.animation = 'none';
   }, 1000);
   setTimeout(() => {
-    captionText.innerText = captions[id];
+    captionText.innerText = captions[slideIndex];
   }, 500);
 }
-
-// eslint-disable-next-line no-use-before-define
-let interval = setInterval(autoSlide, 4000);
 let imgId = 1;
 function autoSlide() {
   if (imgId > pagination.length - 1) {
     imgId = 0;
   }
-  slide(imgId);
+  slideTo(imgId);
   imgId++;
 }
-
+let interval = setInterval(autoSlide, 4000);
 for (let i = 0; i < pagination.length; i++) {
   // eslint-disable-next-line no-loop-func
   pagination[i].addEventListener('click', () => {
     clearInterval(interval);
-    slide(i);
+    slideTo(i);
     imgId = i + 1;
     interval = setInterval(autoSlide, 4000);
   });
