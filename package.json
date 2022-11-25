@@ -1,10 +1,11 @@
 {
   "name": "npm",
   "version": "1.0.0",
-  "description": "<h1>Онлайн-визитка</h1> <a href=\"https://dmitrykirpa.netlify.app/\">Ссылка</a>",
-  "main": "script.js",
+  "description": "<h1>Онлайн-визитка</h1> <a href='https://maximka65.github.io/kirpa_port/'>Ссылка</a>",
+  "main": "assets/js/portfolio.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint -r **/*.js"
   },
   "repository": {
     "type": "git",
