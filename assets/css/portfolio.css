@@ -84,7 +84,7 @@ div {
 }
 
 #templatemo_nav_top * {
-  font-size: .9em !important;
+  font-size: 0.9em !important;
 }
 
 #templatemo_main_nav a {
@@ -98,7 +98,6 @@ div {
 #templatemo_main_nav .navbar .nav-icon {
   margin-right: 20px;
 }
-
 
 #port-carousel {
   background: #efefef !important;
@@ -117,7 +116,7 @@ div {
 }
 
 .product-wap {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .product-wap .product-color-dot.color-dot-red {
@@ -141,10 +140,10 @@ div {
 }
 
 .card.product-wap .card .product-overlay {
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .card.product-wap:hover .card .product-overlay {
@@ -168,7 +167,7 @@ div {
 .brand-img {
   filter: grayscale(100%);
   opacity: 0.5;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .brand-img:hover {
@@ -188,12 +187,12 @@ div {
 }
 
 .portfolio-carousel .h1 {
-  font-size: .5em !important;
+  font-size: 0.5em !important;
   color: #000 !important;
 }
 
 .services-icon-wap {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .services-icon-wap:hover,
@@ -234,12 +233,12 @@ div {
 
 #portfolio_footer ul.footer-icons li:hover {
   background-color: #cfd6e1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #portfolio_footer ul.footer-icons li:hover i {
   color: #212934;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #portfolio_footer .border-light {
@@ -291,6 +290,5 @@ div {
     height: 12px;
   }
 }
-
 
 @media (min-width: 1200px) {}
