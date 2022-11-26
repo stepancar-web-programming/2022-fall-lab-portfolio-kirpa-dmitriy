@@ -1,11 +1,12 @@
 {
-  "name": "npm",
+  "name": "kirpa_site",
   "version": "1.0.0",
   "description": "<h1>Онлайн-визитка</h1> <a href='https://maximka65.github.io/kirpa_port/'>Ссылка</a>",
-  "main": "assets/js/portfolio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint -r **/*.js"
+    "lint": "npx eslint assets/**/*.js",
+    "stylelint": "stylelint '**/*.css'",
+    "stylelint:fix": "stylelint '**/*.css' --fix"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0"
   }
 }
