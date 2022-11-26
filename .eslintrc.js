@@ -1,14 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: 'airbnb-base',
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   rules: {
     'linebreak-style': process.env.NODE_ENV === 'prod' ? 'unix' : 'windows',
@@ -22,6 +21,6 @@ module.exports = {
     'func-names': 0,
     'no-console': 0,
     'default-case': 0,
-    'no-multi-assign': 0,
-  },
+    'no-multi-assign': 0
+  }
 }
