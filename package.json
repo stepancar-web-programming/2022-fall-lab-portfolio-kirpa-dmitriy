@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/stepancar-web-programming/2022-fall-lab-portfolio-kirpa-dmitriy/issues"
   },
-  "homepage": "https://github.com/stepancar-web-programming/2022-fall-lab-portfolio-kirpa-dmitriy#readme",
+  "homepage": "https://dmitrykirpa.netlify.app/",
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
